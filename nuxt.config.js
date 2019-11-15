@@ -43,8 +43,10 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-purgecss'
   ],
+  purgeCSS: {},
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -59,7 +61,8 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    extractCSS: true
   }
-  
+
 }
